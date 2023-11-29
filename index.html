@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css/style.css">
+    <!-- bootstrap CDN links-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto+Condensed:ital,wght@0,400;0,500;1,300&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- aos data -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body class="bg-light">
+   
+<!-- <a class="nav-link text-secondary fs-5" href="#">Login</a> -->
+
+
+    <!-- navbar section -->
+    <nav   data-aos="zoom-in" data-aos-duration="2000" class="navbar  zindex-fixed shadow navbar-expand-lg  bg-body-tertiary">
+        <div class="container-sm  py-3 ">
+          <a  class="navbar-brand " href="#"> <h2  class="text-black">Dozie<span class="text-success">Snickers</span></h2>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse  navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav d-flex  align-items-end ms-auto  py-2 mb-lg-0">
+             <a class="nav-link text-success fs-5" href="#"><li class="">Login</li></a>
+             <li class="nav-item px-lg-5">
+                <a class="nav-link text-success position-relative fs-4" href="#">
+                    <i class="bi bi-cart3"></i>
+                </a>
+            </li>
+            <button class="btn btn-outline-success px-4 " type="submit">Search</button>
+        </ul>
+            
+            
+          </div>
+        </div>
+    </nav>
+    <div  data-aos="zoom-in" data-aos-duration="2000" class="border"></div>
+ 
+
+    <main class="main-page container-sm mb-5">
+        <div class="row ">
+            <div class="canvas col-lg-5 shadow-light pt-4">
+               <div data-aos="fade-up"
+               data-aos-duration="2000" class="first_canvas">
+                <img src="./img/canvas1.jpg" alt="big canvas photo" class="rounded">
+               </div>
+               <div class="row img-container pt-4 d-flex align-items-center  mx-auto mx-lg-0">
+                <div data-aos="fade-up"
+                data-aos-duration="2000" class="d-flex pointer m-0 gap-2">
+
+                    <div data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000"  data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000" class="col-lg-3 ">
+                        <img class="rounded" src="img/canvas3.webp" alt="">
+                    </div>
+                    <div data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000" class="col-lg-3">
+                        <img class="rounded" src="img/new-img2.jpeg" alt="">
+                    </div>
+                    <div data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000" class="col-lg-3">
+                        <img class="rounded" src="img/new-image.webp" alt="" >
+                    </div>
+                    <div data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000" class="col-lg-3">
+                        <img class="rounded" src="img/img5.jpeg" alt="">
+                    </div>
+                   
+                </div>
+               </div>
+            </div>
+            <div data-aos="fade-up-left" data-aos-duration="2000" class="canvas-word col-lg-6   ms-5">
+                <h4 class="mt-5 text-success pt-5 fw-bold">SNEAKER COMPANY</h4>
+                <h1 class="fw-bold display-4 text-black py-4">Fall Limited Edition Sneakers</h1>
+                <p class="fw-bold ">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</p>
+                <div class="d-flex align-items-center">
+                    <h2 class="fw-bold text-black">$12,500</h2>
+                   <div class="percent-wrapper bg-secondary rounded px-2 ms-4">
+                    <h3 class="text-black fw-bold mb-0">50%</h3>
+                   </div>
+                </div>
+           
+                <div class="row mt-4 pe-1 ps-3 ">
+                    <div class="col-5 bg-secondary rounded">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <button type="button" class="minusbtn btn btn-secondary  py-3"><i class="bi bi-dash-lg text-white fs-4"></i></button>
+                            <p class="mb-0 fw-bold countitem">0</p>
+                            <button type="button" class="plusbtn btn btn-secondary  py-3"><i class="bi bi-plus-lg text-white fs-4"></i></button>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="col-7">
+                        <div class="bg-secondary rounded">
+                            <button type="button" class="btn addtocartbtn btn-secondary text-white fs-5 py-3 w-100 "><i class="bi bi-cart3 fs-4 text-white pe-md-4 pe-2 "></i>Add to cart</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
