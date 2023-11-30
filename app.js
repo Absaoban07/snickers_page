@@ -1,17 +1,24 @@
-let count = 0;
+let price = 12500;
+let count = 1;
 
-document.querySelector('.plusbtn').onclick = function(){
-    
-    count += 1;
-    document.querySelector(".countitem").innerHTML= count;
+function updateItemPrice() {
+    document.querySelector(".item-price").innerHTML = `$${price * count}`;
 }
-document.querySelector('.minusbtn').onclick = function(){
+
+document.querySelector('.plusbtn').onclick = function(add){
+    if (count < 5){
+        count += 1;
+    }
+    document.querySelector(".countitem").innerHTML= count;
+    updateItemPrice();
+}
+document.querySelector('.minusbtn').onclick = function(minus){
     if (count != 1){
         count -= 1; 
     }
-
-
     document.querySelector(".countitem").innerHTML= count;
-
+    updateItemPrice()
 }
+
+
 
