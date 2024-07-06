@@ -16,7 +16,7 @@ document.querySelector('.plusbtn').onclick = function(add){
     updateItemPrice();
 }
 document.querySelector('.minusbtn').onclick = function(minus){
-    if (count != 1){
+    if (count != 0){
         count -= 1; 
     }
     document.querySelector(".countitem").innerHTML= count;
